@@ -98,7 +98,9 @@ export default {
       try {
         await this.$store.dispatch("login", formData);
         await this.$router.push("/");
-      } catch (e) {console.error(e)}
+      } catch (e) {
+        console.error(e);
+      }
     },
   },
 };
