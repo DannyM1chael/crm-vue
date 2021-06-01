@@ -5,7 +5,7 @@
         <span class="card-title">Счет в валюте</span>
 
         <p class="currency-line" v-for="cur of currencies" :key="cur">
-          <span>{{ getCurrency(cur) }}</span>
+          <span>{{ getCurrency(cur) | currency(cur) }}</span>
         </p>
       </div>
     </div>
